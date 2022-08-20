@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simple Test Gap</title>
+<link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css">
+<style>
+/* Answer Section: Write your CSS here */
+/* End Answer Section */
+body{
+    font-family: "sans-serif";
+    font-size: 16px;
+    background-color: #FFD9CE;
+}
+
+.Menu-Bar{
+    background-color: #DB5461;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    font-family: "serif";
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Menu-Button{
+    border-radius: 2px;
+    background-color: #593C8F;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style: none;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+    text-align: center;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+#product{
+    text-align: center;
+}
+
+#product .container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+#product .pro{
+    width: 23%;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    background-color: #fff;
+    box-shadow: 20px 20px 30px rgba(10, 10, 10, 0.02);
+    position: relative;
+}
+
+#product .pro img{
+    width: 100%;
+}
+
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+#product .pro .des s{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product .pro .des h5:hover{
+    color: #8161BD;
+}
+
+.product-grid .showcase {
+     overflow: hidden;
+}
+
+.product-grid .showcase-banner { 
+    position: relative; 
+}
+
+.product-grid .product-img.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.product-grid .showcase:hover .product-img.hover { 
+    opacity: 1; 
+}
+
+
+
+
+
+
+#Main-Content{
+    background-color: #FFD9CE;
+}
+
+#Title{
+    font-family: serif;
+    font-size: 1.75rem;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+#Description{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#Product-Card{
+    border-radius: 4px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Sale-Label{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #593C8F;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1;
+    width: 50px;
+    height: 17px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 2px;
+    z-index: 3;
+}
+
+#Product-Title{
+    font-family: serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#Product-Title:hover{
+    color: #8161BD;
+}
+
+#Old-Price{
+    font-size: 0.875rem;
+    text-decoration: line-through;
+    color: #666;
+}
+
+#New-Price{
+    font-size: 1rem;
+}
+
+.Footer{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.15;
+    font-family: serif;
+    color: white;
+    background-color: #DB5461;
+    padding: 1px 70px 70px;
+    height: 300px;
+}
+
+@media (max-width: 1280px){
+    .Menu-Bar {
+        padding: 20px 15px;
+    }
+
+    h2{
+        padding: 20px 10px 10px 10px;
+    }
+
+    p{
+        padding: 5px;
+    }
+
+    .section-p1 {
+        padding: 60px 20px 60px;
+    }
+
+    #product .pro {
+        width: 23%;
+        padding: 10px 12px;    
+        width: calc(50% - 15px / 2);
+    }
+
+    .Footer {
+        padding: 20px 15px;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Answer Section: Write your HTML here -->
+<!-- End Answer Section -->
+
+<section class="Menu-Bar">
+    <h1>Menu Bar</h1>
+        <ul id="Menu-Button">
+            <li>Menu Button</li>
+        </ul>
+</section>
+
+
+
+<section id="product" class="section-p1">
+    <h2>Title:A Random Page</h2>
+    <p>Description:A long paragraph.You can type anything here.Lorem ipsum dolor sit ament, consectetur adipiscing <br> elit. Donec accumsan consequat nisl, ac porttitor velit. Fusce id velit vel sapiem maximus mollis. Proin eget <br> verstibulum ex, eu ornare felis. Sed vitae fringilla quam, non consequat metus. Quisque tincidunt, tellus ut varius <br> convallis, ante neque finibus nunc, non ornare erat felis quis massa. Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+    <div class="container">
+        <div class="pro">
+            <div class="Sale-Label">
+                <span>Sale</span>
+            </div>
+            <div class="product-grid">
+              <div class="showcase">
+                    <div class="showcase-banner">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1_large.png?format=webp&v=1530129292" alt="Mens Winter Leathers Jackets" width="300" class="product-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-2_large.png?format=webp&v=1530129318" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    </div>
+                    <div class="des">       
+                        <h5>Product Title</h5>
+                        <s>RM320.00</s>
+                        <span> RM300.00</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="Sale-Label">
+                <span>Sale</span>
+            </div>
+            <div class="product-grid">
+              <div class="showcase">
+                    <div class="showcase-banner">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1_large.png?format=webp&v=1530129292" alt="Mens Winter Leathers Jackets" width="300" class="product-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-2_large.png?format=webp&v=1530129318" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    </div>
+                    <div class="des">       
+                        <h5>Product Title</h5>
+                        <s>RM320.00</s>
+                        <span> RM300.00</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="Sale-Label">
+                <span>Sale</span>
+            </div>
+            <div class="product-grid">
+              <div class="showcase">
+                    <div class="showcase-banner">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1_large.png?format=webp&v=1530129292" alt="Mens Winter Leathers Jackets" width="300" class="product-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-2_large.png?format=webp&v=1530129318" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    </div>
+                    <div class="des">       
+                        <h5>Product Title</h5>
+                        <s>RM320.00</s>
+                        <span> RM300.00</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="Sale-Label">
+                <span>Sale</span>
+            </div>
+            <div class="product-grid">
+              <div class="showcase">
+                    <div class="showcase-banner">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1_large.png?format=webp&v=1530129292" alt="Mens Winter Leathers Jackets" width="300" class="product-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-2_large.png?format=webp&v=1530129318" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    </div>
+                    <div class="des">       
+                        <h5>Product Title</h5>
+                        <s>RM320.00</s>
+                        <span> RM300.00</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="Sale-Label">
+                <span>Sale</span>
+            </div>
+            <div class="product-grid">
+              <div class="showcase">
+                    <div class="showcase-banner">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1_large.png?format=webp&v=1530129292" alt="Mens Winter Leathers Jackets" width="300" class="product-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-2_large.png?format=webp&v=1530129318" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    </div>
+                    <div class="des">       
+                        <h5>Product Title</h5>
+                        <s>RM320.00</s>
+                        <span> RM300.00</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="Sale-Label">
+                <span>Sale</span>
+            </div>
+            <div class="product-grid">
+              <div class="showcase">
+                    <div class="showcase-banner">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1_large.png?format=webp&v=1530129292" alt="Mens Winter Leathers Jackets" width="300" class="product-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-2_large.png?format=webp&v=1530129318" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    </div>
+                    <div class="des">       
+                        <h5>Product Title</h5>
+                        <s>RM320.00</s>
+                        <span> RM300.00</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<section class="Footer">
+    <h1>Footer</h1>
+</section>
+
+
+</body>
+</html>
