@@ -1,3 +1,3 @@
 # Simple-Test-Gap
 
-![image]![Screenshot_1](https://user-images.githubusercontent.com/107684179/185780712-9e5ea136-bcc7-44e4-abd4-83d29ca91a97.png)
+![This is an image]![Screenshot_1](https://user-images.githubusercontent.com/107684179/185780765-5aff55a2-2d66-4fdb-aa4b-18d5c3b2ee32.png)
